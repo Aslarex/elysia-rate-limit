@@ -21,7 +21,8 @@ export const plugin = (userOptions?: Partial<Options>) => {
   // otherwise request will be triggered twice
   return (app: Elysia) => {
     const plugin = new Elysia({
-      name: "elysia-rate-limit"
+      name: "elysia-rate-limit",
+      seed: options
     })
 
     // @ts-expect-error somehow qi is being sent from elysia, but there's no type declaration for it

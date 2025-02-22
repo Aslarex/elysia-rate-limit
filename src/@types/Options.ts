@@ -1,5 +1,5 @@
-import type { Server } from 'bun'
 
+import type { Server } from 'elysia/dist/universal/server'
 import type { Context } from './Context'
 import type { Generator } from './Generator'
 
